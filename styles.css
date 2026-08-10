@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ==========================================================================
+   CSS CUSTOM PROPERTIES & TOKENS
+   ========================================================================== */
+:root {
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-bg-dark: #07090e;
+  --color-bg-surface: #0f172a;
+  --color-bg-card: rgba(15, 23, 42, 0.7);
+
+  --color-cyan-glow: #00f2fe;
+  --color-indigo-glow: #4facfe;
+  --color-purple-accent: #7c3aed;
+  --color-pink-accent: #f43f5e;
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-glass-hover: rgba(0, 242, 254, 0.3);
+}
+
+/* ==========================================================================
+   BASE & RESET ENHANCEMENTS
+   ========================================================================== */
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00f2fe;
+}
+
+/* ==========================================================================
+   UTILITY & GLASSMORPHISM CLASSES
+   ========================================================================== */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+}
+
+.glass-nav {
+  background: rgba(7, 9, 14, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card {
+  background: rgba(15, 23, 42, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-glass);
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  border-color: var(--border-glass-hover);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px -15px rgba(0, 242, 254, 0.15);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-accent {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+}
+
+.bg-gradient-purple {
+  background: linear-gradient(135deg, #7c3aed 0%, #c084fc 100%);
+}
+
+/* Glow effects */
+.glow-effect {
+  position: relative;
+}
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(90deg, #00f2fe, #7c3aed, #00f2fe);
+  background-size: 200% 200%;
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  animation: gradientShift 4s ease infinite;
+}
+.glow-effect:hover::before {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   ANIMATIONS & KEYFRAMES
+   ========================================================================== */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(1deg); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 7s ease-in-out 2s infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   PORTFOLIO FILTER & CARDS
+   ========================================================================== */
+.filter-btn {
+  transition: all 0.25s ease;
+}
+.filter-btn.active {
+  background: linear-gradient(135deg, rgba(0, 242, 254, 0.15), rgba(79, 172, 254, 0.15));
+  border-color: rgba(0, 242, 254, 0.5);
+  color: #00f2fe;
+  box-shadow: 0 0 15px rgba(0, 242, 254, 0.2);
+}
+
+.project-card {
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+.project-card.hidden-card {
+  display: none;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+.project-card .img-overlay {
+  background: linear-gradient(to top, rgba(7, 9, 14, 0.95) 0%, rgba(7, 9, 14, 0.4) 60%, rgba(7, 9, 14, 0) 100%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.project-card:hover .img-overlay {
+  opacity: 1;
+}
+
+.project-card img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ==========================================================================
+   MODAL / CASE STUDY POPUP (Native <dialog> Styling)
+   ========================================================================== */
+dialog.case-study-modal {
+  background: transparent;
+  border: none;
+  padding: 0;
+  max-width: 900px;
+  width: 92%;
+  margin: auto;
+  outline: none;
+  color: var(--color-text-primary);
+}
+
+/* Modern Discrete Animation for Top-Layer Dialog */
+dialog.case-study-modal[open] {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+
+  @starting-style {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+}
+
+dialog.case-study-modal {
+  opacity: 0;
+  transform: scale(0.95) translateY(20px);
+  transition-property: opacity, transform, display, overlay;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-behavior: allow-discrete;
+}
+
+dialog.case-study-modal::backdrop {
+  background-color: rgba(3, 7, 18, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: display 0.3s allow-discrete, overlay 0.3s allow-discrete, background-color 0.3s ease;
+}
+
+dialog.case-study-modal[open]::backdrop {
+  background-color: rgba(3, 7, 18, 0.85);
+
+  @starting-style {
+    background-color: rgba(3, 7, 18, 0);
+  }
+}
+
+/* Reduced motion fallback */
+@media (prefers-reduced-motion: reduce) {
+  dialog.case-study-modal {
+    transform: none;
+    transition-duration: 0.1s;
+  }
+  @starting-style {
+    dialog.case-study-modal[open] {
+      transform: none;
+    }
+  }
+}
+
+/* Inner Modal Card Container */
+.modal-content-wrapper {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 242, 254, 0.1);
+  overflow: hidden;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Toast Notification */
+#toast-notification {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+#toast-notification.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Active Nav Indicator */
+.nav-link.active-link {
+  color: #00f2fe;
+  font-weight: 600;
+}
+.nav-link.active-link::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  border-radius: 2px;
+  margin-top: 2px;
+}

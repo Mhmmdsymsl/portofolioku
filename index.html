@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Syamsul Muarif — Junior Graphic Designer & Brand Strategist | Portfolio</title>
+  <meta name="description" content="Junior Graphic Designer & UI/UX Specialist crafting high-converting brand identities, design systems, vector illustrations, and digital experiences for tech startups and creative agencies.">
+  <meta name="keywords" content="Graphic Designer, Brand Identity, UI/UX Design, Logo Design, Packaging Design, Graphic Design Portfolio, Freelance Designer">
+  <meta name="author" content="Muhammad Syamsul Muarif">
+
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Muhammad Syamsul Muarif — Junior Graphic Designer Portfolio">
+  <meta property="og:description" content="Crafting bold visual identities and digital experiences for startups and agencies. Explore case studies and selected works.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Tailwind CSS CDN with Custom Config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#e0f7ff',
+              100: '#b8eeff',
+              400: '#00f2fe',
+              500: '#00d2fe',
+              600: '#4facfe',
+              900: '#07090e',
+              950: '#030712'
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#07090e] text-slate-100 antialiased selection:bg-cyan-500 selection:text-black">
+
+  <!-- ==========================================================================
+       1. HEADER / NAVIGATION BAR
+       ========================================================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group" aria-label="Muhammad Syamsul Muarif Portfolio Home">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-400 to-indigo-600 flex items-center justify-center font-extrabold text-black text-xl shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+          A
+        </div>
+        <div>
+          <span class="text-lg font-bold tracking-tight text-white block leading-none">Muhammad Syamsul Muarif</span>
+          <span class="text-[10px] tracking-widest uppercase font-semibold text-cyan-400 block mt-1">Graphic Designer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#home" class="nav-link text-slate-300 hover:text-cyan-400 transition-colors py-1">Home</a>
+        <a href="#portfolio" class="nav-link text-slate-300 hover:text-cyan-400 transition-colors py-1">Portfolio</a>
+        <a href="#about" class="nav-link text-slate-300 hover:text-cyan-400 transition-colors py-1">About</a>
+        <a href="#services" class="nav-link text-slate-300 hover:text-cyan-400 transition-colors py-1">Services</a>
+        <a href="#testimonials" class="nav-link text-slate-300 hover:text-cyan-400 transition-colors py-1">Reviews</a>
+        <a href="#contact" class="nav-link text-slate-300 hover:text-cyan-400 transition-colors py-1">Contact</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="#contact" class="px-5 py-2.5 rounded-full text-sm font-bold bg-gradient-to-r from-cyan-400 to-indigo-500 text-black hover:opacity-90 transition-opacity shadow-lg shadow-cyan-500/20 flex items-center gap-2">
+          <span>Let's Talk</span>
+          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 focus:outline-none" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu-drawer" class="hidden md:hidden border-b border-slate-800 bg-slate-950/95 backdrop-blur-xl px-4 py-6 space-y-4">
+      <a href="#home" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-cyan-400">Home</a>
+      <a href="#portfolio" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-cyan-400">Portfolio</a>
+      <a href="#about" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-cyan-400">About & Skills</a>
+      <a href="#services" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-cyan-400">Services</a>
+      <a href="#testimonials" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-cyan-400">Client Reviews</a>
+      <a href="#contact" class="mobile-nav-link block text-base font-medium text-slate-200 hover:text-cyan-400">Contact</a>
+      <div class="pt-4 border-t border-slate-800">
+        <a href="#contact" class="mobile-nav-link w-full py-3 rounded-xl text-center font-bold bg-gradient-to-r from-cyan-400 to-indigo-500 text-black block">
+          Hire Me Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         2. HERO SECTION
+         ========================================================================== -->
+    <section id="home" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+      <!-- Background Ambient Glow Orbs -->
+      <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+      <div class="absolute top-1/3 right-10 w-[400px] h-[400px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Copy & Actions -->
+          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+            
+            <!-- Availability Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-cyan-950/60 border border-cyan-500/30 text-xs font-semibold text-cyan-300">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+              <span>Available for Freelance & Lead Roles (Q3/Q4)</span>
+            </div>
+
+            <!-- Main Catchy Headline -->
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]">
+              Crafting <span class="text-gradient">Visual Identities</span> & Digital Experiences.
+            </h1>
+
+            <!-- Bio -->
+            <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+              Junior Graphic Designer & Brand Strategist with 5+ years of experience helping tech startups, agencies, and high-growth brands scale through precision design systems, packaging, and digital graphics.
+            </p>
+
+            <!-- Action CTA Buttons -->
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#portfolio" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold bg-gradient-to-r from-cyan-400 to-indigo-500 text-black hover:shadow-xl hover:shadow-cyan-500/25 transition-all flex items-center justify-center gap-2 group">
+                <span>View Selected Works</span>
+                <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-1 transition-transform"></i>
+              </a>
+
+              <button onclick="downloadCV()" class="w-full sm:w-auto px-8 py-4 rounded-full font-bold bg-slate-900 border border-slate-700 text-slate-200 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-center justify-center gap-2">
+                <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i>
+                <span>Download CV</span>
+              </button>
+            </div>
+
+            <!-- Micro Trust Highlights -->
+            <div class="pt-6 border-t border-slate-800/80 flex flex-wrap items-center justify-center lg:justify-start gap-8 text-xs font-semibold text-slate-400">
+              <div class="flex items-center gap-2">
+                <i data-lucide="shield-check" class="w-4 h-4 text-cyan-400"></i>
+                <span>100% On-Time Delivery</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="award" class="w-4 h-4 text-indigo-400"></i>
+                <span>Multi-Award Winning</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i data-lucide="sparkles" class="w-4 h-4 text-amber-400"></i>
+                <span>50+ Successful Launches</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Graphic Card Showcase -->
+          <div class="lg:col-span-5 relative flex justify-center">
+            <div class="relative w-full max-w-md">
+              
+              <!-- Main Designer Card -->
+              <div class="glass-card rounded-3xl p-6 relative z-10 space-y-6 shadow-2xl border border-white/10">
+                <div class="relative rounded-2xl overflow-hidden aspect-[4/3]">
+                  <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Muhammad Syamsul Muarif Design Showcase" class="w-full h-full object-cover">
+                  <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent"></div>
+                  
+                  <!-- Floating Badge -->
+                  <div class="absolute bottom-4 left-4 right-4 p-3 rounded-xl bg-slate-900/80 backdrop-blur-md border border-white/10 flex items-center justify-between text-xs">
+                    <div>
+                      <span class="text-slate-400 block text-[10px] uppercase font-bold tracking-wider">Latest Case Study</span>
+                      <span class="font-bold text-white">Lumina Neobank Rebrand</span>
+                    </div>
+                    <span class="px-2.5 py-1 rounded-full bg-cyan-500/20 text-cyan-300 font-semibold border border-cyan-500/30">
+                      Brand System
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Tools Stack Grid -->
+                <div>
+                  <span class="text-xs font-semibold text-slate-400 block mb-3 uppercase tracking-wider">Core Tools & Software</span>
+                  <div class="flex items-center gap-3">
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-900 text-xs font-medium text-slate-200 border border-slate-800 flex items-center gap-1.5">
+                      <i data-lucide="figma" class="w-3.5 h-3.5 text-pink-400"></i> Figma
+                    </span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-900 text-xs font-medium text-slate-200 border border-slate-800 flex items-center gap-1.5">
+                      <i data-lucide="layers" class="w-3.5 h-3.5 text-cyan-400"></i> Photoshop
+                    </span>
+                    <span class="px-3 py-1.5 rounded-lg bg-slate-900 text-xs font-medium text-slate-200 border border-slate-800 flex items-center gap-1.5">
+                      <i data-lucide="pen-tool" class="w-3.5 h-3.5 text-amber-400"></i> Illustrator
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Floating Micro Card 1 -->
+              <div class="absolute -top-6 -right-6 glass-panel p-4 rounded-2xl hidden sm:flex items-center gap-3 z-20 animate-float-slow border border-cyan-500/30 shadow-xl">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/20 flex items-center justify-center text-cyan-400">
+                  <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-white">99.8%</div>
+                  <div class="text-[10px] text-slate-400">Client Rating</div>
+                </div>
+              </div>
+
+              <!-- Floating Micro Card 2 -->
+              <div class="absolute -bottom-6 -left-6 glass-panel p-4 rounded-2xl hidden sm:flex items-center gap-3 z-20 animate-float-delayed border border-indigo-500/30 shadow-xl">
+                <div class="w-10 h-10 rounded-xl bg-indigo-500/20 flex items-center justify-center text-indigo-400">
+                  <i data-lucide="briefcase" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <div class="text-sm font-bold text-white">50+ Projects</div>
+                  <div class="text-[10px] text-slate-400">Worldwide Delivered</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         3. FEATURED PORTFOLIO / PROJECTS (THE CORE SECTION)
+         ========================================================================== -->
+    <section id="portfolio" class="py-24 bg-slate-950/60 relative border-t border-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+          <span class="px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-xs font-bold text-cyan-400 uppercase tracking-widest">
+            Portfolio Showcase
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white">
+            Featured <span class="text-gradient">Case Studies</span> & Design Works
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            Explore curated brand identities, web application interfaces, illustrations, and sustainable packaging solutions built for global clients.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+          <button class="filter-btn active px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 flex items-center gap-2" data-filter="all">
+            <span>All Works</span>
+            <span class="px-2 py-0.5 rounded-full bg-slate-800 text-[10px]">6</span>
+          </button>
+
+          <button class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 flex items-center gap-2" data-filter="branding">
+            <span>Branding</span>
+            <span class="px-2 py-0.5 rounded-full bg-slate-800 text-[10px]">2</span>
+          </button>
+
+          <button class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 flex items-center gap-2" data-filter="uiux">
+            <span>UI/UX & Web</span>
+            <span class="px-2 py-0.5 rounded-full bg-slate-800 text-[10px]">1</span>
+          </button>
+
+          <button class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 flex items-center gap-2" data-filter="illustration">
+            <span>Illustration</span>
+            <span class="px-2 py-0.5 rounded-full bg-slate-800 text-[10px]">1</span>
+          </button>
+
+          <button class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 flex items-center gap-2" data-filter="packaging">
+            <span>Packaging</span>
+            <span class="px-2 py-0.5 rounded-full bg-slate-800 text-[10px]">1</span>
+          </button>
+
+          <button class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold border border-slate-800 bg-slate-900 text-slate-300 hover:border-slate-700 flex items-center gap-2" data-filter="social">
+            <span>Social Media</span>
+            <span class="px-2 py-0.5 rounded-full bg-slate-800 text-[10px]">1</span>
+          </button>
+        </div>
+
+        <!-- Portfolio Cards Grid (3 Columns Desktop, 2 Tablet, 1 Mobile) -->
+        <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Card 1: Lumina Neobank -->
+          <article class="project-card glass-card rounded-2xl overflow-hidden cursor-pointer group" data-category="branding" onclick="openCaseStudy('lumina-neobank')">
+            <div class="relative aspect-[16/9] overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="Lumina Neobank Rebrand" class="w-full h-full object-cover">
+              <div class="img-overlay absolute inset-0 p-6 flex flex-col justify-between">
+                <div class="flex justify-end">
+                  <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-400 text-black">
+                    Case Study
+                  </span>
+                </div>
+                <div>
+                  <button class="w-full py-3 rounded-xl bg-cyan-400 text-black font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+                    <span>View Case Study</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span class="text-cyan-400 font-semibold uppercase tracking-wider">Branding & Identity</span>
+                <span>2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Lumina - Neobank Visual Identity
+              </h3>
+              <p class="text-sm text-slate-400 line-clamp-2">
+                Complete brand ecosystem, logo system, and design guidelines for a next-gen fintech platform.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 2: Aether Creative Suite -->
+          <article class="project-card glass-card rounded-2xl overflow-hidden cursor-pointer group" data-category="uiux" onclick="openCaseStudy('aether-suite')">
+            <div class="relative aspect-[16/9] overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Aether AI Creative Suite" class="w-full h-full object-cover">
+              <div class="img-overlay absolute inset-0 p-6 flex flex-col justify-between">
+                <div class="flex justify-end">
+                  <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-400 text-black">
+                    Case Study
+                  </span>
+                </div>
+                <div>
+                  <button class="w-full py-3 rounded-xl bg-cyan-400 text-black font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+                    <span>View Case Study</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span class="text-purple-400 font-semibold uppercase tracking-wider">UI/UX & Web</span>
+                <span>2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Aether - AI Creative Suite UI
+              </h3>
+              <p class="text-sm text-slate-400 line-clamp-2">
+                Dark-mode web application design system and high-fidelity UI for generative AI workflows.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 3: CyberPulse Art -->
+          <article class="project-card glass-card rounded-2xl overflow-hidden cursor-pointer group" data-category="illustration" onclick="openCaseStudy('cyberpulse-art')">
+            <div class="relative aspect-[16/9] overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?auto=format&fit=crop&w=800&q=80" alt="CyberPulse Futuristic Art" class="w-full h-full object-cover">
+              <div class="img-overlay absolute inset-0 p-6 flex flex-col justify-between">
+                <div class="flex justify-end">
+                  <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-400 text-black">
+                    Case Study
+                  </span>
+                </div>
+                <div>
+                  <button class="w-full py-3 rounded-xl bg-cyan-400 text-black font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+                    <span>View Case Study</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span class="text-pink-400 font-semibold uppercase tracking-wider">Illustration</span>
+                <span>2024</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                CyberPulse - Vector Illustration Series
+              </h3>
+              <p class="text-sm text-slate-400 line-clamp-2">
+                Vibrant cyberpunk illustrations and visual key art for global music festival branding.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 4: Verve Coffee Packaging -->
+          <article class="project-card glass-card rounded-2xl overflow-hidden cursor-pointer group" data-category="packaging" onclick="openCaseStudy('verve-coffee')">
+            <div class="relative aspect-[16/9] overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=80" alt="Verve Coffee Eco Packaging" class="w-full h-full object-cover">
+              <div class="img-overlay absolute inset-0 p-6 flex flex-col justify-between">
+                <div class="flex justify-end">
+                  <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-400 text-black">
+                    Case Study
+                  </span>
+                </div>
+                <div>
+                  <button class="w-full py-3 rounded-xl bg-cyan-400 text-black font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+                    <span>View Case Study</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span class="text-amber-400 font-semibold uppercase tracking-wider">Packaging</span>
+                <span>2024</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Verve - Artisan Coffee Packaging
+              </h3>
+              <p class="text-sm text-slate-400 line-clamp-2">
+                Sustainable tactile packaging design and typography for single-origin specialty coffee beans.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 5: Solstice Social Ad Suite -->
+          <article class="project-card glass-card rounded-2xl overflow-hidden cursor-pointer group" data-category="social" onclick="openCaseStudy('solstice-ad-suite')">
+            <div class="relative aspect-[16/9] overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=800&q=80" alt="Solstice Social Campaign" class="w-full h-full object-cover">
+              <div class="img-overlay absolute inset-0 p-6 flex flex-col justify-between">
+                <div class="flex justify-end">
+                  <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-400 text-black">
+                    Case Study
+                  </span>
+                </div>
+                <div>
+                  <button class="w-full py-3 rounded-xl bg-cyan-400 text-black font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+                    <span>View Case Study</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span class="text-indigo-400 font-semibold uppercase tracking-wider">Social Media</span>
+                <span>2025</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Solstice - High-Impact Ad Suite
+              </h3>
+              <p class="text-sm text-slate-400 line-clamp-2">
+                Conversion-focused motion graphics and social media ad templates for luxury apparel launch.
+              </p>
+            </div>
+          </article>
+
+          <!-- Card 6: Apex Athletics -->
+          <article class="project-card glass-card rounded-2xl overflow-hidden cursor-pointer group" data-category="branding" onclick="openCaseStudy('apex-athletics')">
+            <div class="relative aspect-[16/9] overflow-hidden bg-slate-900">
+              <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=800&q=80" alt="Apex Athletics Brand System" class="w-full h-full object-cover">
+              <div class="img-overlay absolute inset-0 p-6 flex flex-col justify-between">
+                <div class="flex justify-end">
+                  <span class="px-3 py-1 text-xs font-bold rounded-full bg-cyan-400 text-black">
+                    Case Study
+                  </span>
+                </div>
+                <div>
+                  <button class="w-full py-3 rounded-xl bg-cyan-400 text-black font-bold text-sm flex items-center justify-center gap-2 shadow-lg">
+                    <span>View Case Study</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <div class="flex items-center justify-between text-xs text-slate-400">
+                <span class="text-cyan-400 font-semibold uppercase tracking-wider">Branding & Identity</span>
+                <span>2024</span>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Apex Athletics - Brand System
+              </h3>
+              <p class="text-sm text-slate-400 line-clamp-2">
+                Dynamic athletic brand identity, custom emblem design, and technical sportswear graphics.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NATIVE DIALOG MODAL POPUP FOR CASE STUDIES -->
+    <dialog id="case-study-modal" class="case-study-modal" aria-modal="true" role="dialog">
+      <div class="modal-content-wrapper relative">
+        <button id="modal-close-btn" class="absolute top-4 right-4 z-30 w-10 h-10 rounded-full bg-slate-900/80 hover:bg-slate-800 text-slate-300 hover:text-white flex items-center justify-center border border-white/10 backdrop-blur-md transition-colors" aria-label="Close Case Study Modal">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+        <div id="modal-dynamic-content">
+          <!-- Populated by script.js dynamically -->
+        </div>
+      </div>
+    </dialog>
+
+    <!-- ==========================================================================
+         4. ABOUT & SKILLS SECTION
+         ========================================================================== -->
+    <section id="about" class="py-24 relative border-t border-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left Column: Biography -->
+          <div class="lg:col-span-6 space-y-6">
+            <span class="px-3.5 py-1.5 rounded-full bg-indigo-950/80 border border-indigo-500/30 text-xs font-bold text-indigo-400 uppercase tracking-widest">
+              About & Design Philosophy
+            </span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+              Design is not just aesthetic — it's <span class="text-gradient">Strategic Problem Solving</span>.
+            </h2>
+            <p class="text-slate-300 text-base leading-relaxed">
+              I am Muhammad Syamsul Muarif, a Junior Graphic Designer & Visual Strategist based in San Francisco. With over 5 years of industry experience, I partner with founders, marketing leads, and creative directors to turn complex ideas into unforgettable visual stories.
+            </p>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Whether establishing a ground-up identity for a fintech startup or engineering scalable UI components for high-traffic SaaS applications, my work merges clean geometry, color theory, and high conversion UX principles.
+            </p>
+
+            <!-- Key Stats Counter Cards -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4">
+              <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 stat-counter" data-target="5" data-suffix="+">0</div>
+                <div class="text-xs text-slate-400 mt-1 font-medium">Years Experience</div>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 stat-counter" data-target="50" data-suffix="+">0</div>
+                <div class="text-xs text-slate-400 mt-1 font-medium">Projects Done</div>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 stat-counter" data-target="20" data-suffix="+">0</div>
+                <div class="text-xs text-slate-400 mt-1 font-medium">Happy Clients</div>
+              </div>
+              <div class="p-4 rounded-xl bg-slate-900/60 border border-white/5 text-center">
+                <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 stat-counter" data-target="99" data-suffix="%">0</div>
+                <div class="text-xs text-slate-400 mt-1 font-medium">Satisfaction</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Skills & Tools -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="glass-card rounded-2xl p-6 sm:p-8 space-y-6 border border-white/10">
+              <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                <i data-lucide="cpu" class="w-5 h-5 text-cyan-400"></i> Specialized Design Capabilities
+              </h3>
+
+              <!-- Skill Progress Bar Items -->
+              <div class="space-y-4">
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span class="text-slate-200">Brand Strategy & Visual Systems</span>
+                    <span class="text-cyan-400">98%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full w-[98%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span class="text-slate-200">UI/UX & Web Application Graphics</span>
+                    <span class="text-cyan-400">92%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full w-[92%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span class="text-slate-200">Vector Illustration & Key Art</span>
+                    <span class="text-cyan-400">95%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full w-[95%]"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span class="text-slate-200">Packaging & Print Production</span>
+                    <span class="text-cyan-400">88%</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-gradient-to-r from-cyan-400 to-indigo-500 rounded-full w-[88%]"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Tool Skill Badges Tags -->
+              <div class="pt-4 border-t border-slate-800">
+                <span class="text-xs font-semibold text-slate-400 block mb-3 uppercase tracking-wider">Software Stack</span>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-cyan-300 border border-slate-800">Adobe Photoshop</span>
+                  <span class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-amber-300 border border-slate-800">Adobe Illustrator</span>
+                  <span class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-pink-300 border border-slate-800">Figma</span>
+                  <span class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-purple-300 border border-slate-800">After Effects</span>
+                  <span class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-emerald-300 border border-slate-800">InDesign</span>
+                  <span class="px-3 py-1.5 text-xs font-semibold rounded-lg bg-slate-900 text-cyan-300 border border-slate-800">Cinema 4D</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. SERVICES OFFERED
+         ========================================================================== -->
+    <section id="services" class="py-24 bg-slate-950/60 relative border-t border-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-xs font-bold text-cyan-400 uppercase tracking-widest">
+            Services & Expertise
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white">
+            Tailored Design <span class="text-gradient">Solutions</span>
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            High-value design services designed to increase brand equity, elevate user perception, and convert visitors into loyal customers.
+          </p>
+        </div>
+
+        <!-- 4 Service Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          
+          <!-- Service 1 -->
+          <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-cyan-500/40 group flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-colors">
+                <i data-lucide="palette" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Brand Identity Design
+              </h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Logos, brand guidelines, color palettes, iconography, and full visual ecosystem creation.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Vector Logo Suites</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Brand Style Books</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-cyan-400"></i> Typography Systems</li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-slate-800 text-xs font-semibold text-slate-400 flex items-center justify-between">
+              <span>Timeline: 2-3 Weeks</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-cyan-400"></i>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-cyan-500/40 group flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-black transition-colors">
+                <i data-lucide="layout" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                UI/UX & Web Graphics
+              </h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Web app interfaces, mobile layouts, landing page design, and interactive design systems.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> Figma Design Systems</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> SaaS App Dashboard UI</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-400"></i> High-Converting Landers</li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-slate-800 text-xs font-semibold text-slate-400 flex items-center justify-between">
+              <span>Timeline: 3-4 Weeks</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-purple-400"></i>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-cyan-500/40 group flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-black transition-colors">
+                <i data-lucide="share-2" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Digital & Social Assets
+              </h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                High-converting social ad creatives, marketing banners, deck presentations, and motion kits.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Meta & TikTok Ad Suites</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Pitch Decks & Slides</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-indigo-400"></i> Motion Graphics Templates</li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-slate-800 text-xs font-semibold text-slate-400 flex items-center justify-between">
+              <span>Timeline: 1-2 Weeks</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400"></i>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="glass-card rounded-2xl p-6 space-y-4 hover:border-cyan-500/40 group flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 group-hover:bg-amber-500 group-hover:text-black transition-colors">
+                <i data-lucide="box" class="w-6 h-6"></i>
+              </div>
+              <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+                Print & Packaging Design
+              </h3>
+              <p class="text-sm text-slate-400 leading-relaxed">
+                Tactile retail product packaging, die-cut labels, editorial layouts, and merchandise graphics.
+              </p>
+              <ul class="space-y-2 text-xs text-slate-300">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Eco Package Dielines</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Print-Ready Files & Foils</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-400"></i> Retail Merch & Apparel</li>
+              </ul>
+            </div>
+            <div class="pt-4 border-t border-slate-800 text-xs font-semibold text-slate-400 flex items-center justify-between">
+              <span>Timeline: 2-3 Weeks</span>
+              <i data-lucide="arrow-right" class="w-4 h-4 text-amber-400"></i>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. TESTIMONIALS / CLIENT REVIEWS
+         ========================================================================== -->
+    <section id="testimonials" class="py-24 relative border-t border-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span class="px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-xs font-bold text-cyan-400 uppercase tracking-widest">
+            Client Testimonials
+          </span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white">
+            Trusted by Founders & <span class="text-gradient">Creative Leaders</span>
+          </h2>
+          <p class="text-slate-400 text-base sm:text-lg">
+            Here is what executives and product directors say about working together.
+          </p>
+        </div>
+
+        <!-- Carousel Wrapper Card -->
+        <div class="max-w-4xl mx-auto glass-card rounded-3xl p-8 sm:p-12 relative border border-white/10 shadow-2xl">
+          
+          <div id="testimonial-card-content" class="min-h-[220px]">
+            <!-- Rendered by script.js -->
+          </div>
+
+          <!-- Controls Bar -->
+          <div class="mt-8 pt-6 border-t border-slate-800 flex items-center justify-between">
+            <div id="testimonial-dots" class="flex items-center gap-2">
+              <!-- Rendered by script.js -->
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button id="prev-testimonial" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Previous Testimonial">
+                <i data-lucide="chevron-left" class="w-5 h-5"></i>
+              </button>
+              <button id="next-testimonial" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-700 hover:border-cyan-400 text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Next Testimonial">
+                <i data-lucide="chevron-right" class="w-5 h-5"></i>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. CONTACT SECTION & FUNCTIONAL FORM
+         ========================================================================== -->
+    <section id="contact" class="py-24 bg-slate-950/80 relative border-t border-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          
+          <!-- Left Column: Direct Info -->
+          <div class="lg:col-span-5 space-y-8">
+            <div class="space-y-4">
+              <span class="px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/30 text-xs font-bold text-cyan-400 uppercase tracking-widest">
+                Get In Touch
+              </span>
+              <h2 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight">
+                Let's Build Something <span class="text-gradient">Iconic</span>.
+              </h2>
+              <p class="text-slate-300 text-base">
+                Have a new project in mind or looking to hire a lead graphic designer? Send a message and let's bring your vision to life.
+              </p>
+            </div>
+
+            <!-- Direct Contact Methods -->
+            <div class="space-y-4">
+              
+              <!-- 1-Click Copy Email Card -->
+              <div onclick="copyEmail()" class="glass-card p-4 rounded-xl flex items-center gap-4 cursor-pointer hover:border-cyan-500/40 group">
+                <div class="w-12 h-12 rounded-lg bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-cyan-500 group-hover:text-black transition-colors shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5"></i>
+                </div>
+                <div class="grow">
+                  <span class="text-xs text-slate-400 block font-medium">Direct Email (Click to copy)</span>
+                  <span class="text-sm font-bold text-white group-hover:text-cyan-400 transition-colors">syam.morgan@auradesign.io</span>
+                </div>
+                <i data-lucide="copy" class="w-4 h-4 text-slate-500 group-hover:text-cyan-400 transition-colors"></i>
+              </div>
+
+              <!-- Location Card -->
+              <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                <div class="w-12 h-12 rounded-lg bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 block font-medium">Location</span>
+                  <span class="text-sm font-bold text-white">San Francisco, CA (Remote Worldwide)</span>
+                </div>
+              </div>
+
+              <!-- Availability Status -->
+              <div class="glass-card p-4 rounded-xl flex items-center gap-4">
+                <div class="w-12 h-12 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <span class="text-xs text-slate-400 block font-medium">Current Status</span>
+                  <span class="text-sm font-bold text-emerald-400 flex items-center gap-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Accepting Q3/Q4 Projects
+                  </span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Media Platforms -->
+            <div class="space-y-3">
+              <span class="text-xs font-semibold text-slate-400 block uppercase tracking-wider">Design Platforms & Networks</span>
+              <div class="flex items-center gap-3">
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 hover:border-cyan-400 hover:text-cyan-400 flex items-center justify-center text-slate-300 transition-colors" aria-label="Behance Profile">
+                  <i data-lucide="palette" class="w-5 h-5"></i>
+                </a>
+                <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 hover:border-pink-400 hover:text-pink-400 flex items-center justify-center text-slate-300 transition-colors" aria-label="Dribbble Profile">
+                  <i data-lucide="dribbble" class="w-5 h-5"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 hover:border-cyan-400 hover:text-cyan-400 flex items-center justify-center text-slate-300 transition-colors" aria-label="LinkedIn Profile">
+                  <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 hover:border-purple-400 hover:text-purple-400 flex items-center justify-center text-slate-300 transition-colors" aria-label="Instagram Profile">
+                  <i data-lucide="instagram" class="w-5 h-5"></i>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-400 hover:text-white flex items-center justify-center text-slate-300 transition-colors" aria-label="GitHub Profile">
+                  <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Interactive Form -->
+          <div class="lg:col-span-7">
+            <form id="contact-form" class="glass-card p-6 sm:p-8 rounded-3xl border border-white/10 space-y-6">
+              <h3 class="text-2xl font-bold text-white mb-2">Send a Message</h3>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Name Field -->
+                <div>
+                  <label for="form-name" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                    Your Name <span class="text-cyan-400">*</span>
+                  </label>
+                  <input type="text" id="form-name" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm transition-colors">
+                </div>
+
+                <!-- Email Field -->
+                <div>
+                  <label for="form-email" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                    Your Email <span class="text-cyan-400">*</span>
+                  </label>
+                  <input type="email" id="form-email" required placeholder="sarah@company.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Project Type Dropdown -->
+                <div>
+                  <label for="form-service" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                    Project Service <span class="text-cyan-400">*</span>
+                  </label>
+                  <select id="form-service" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm transition-colors">
+                    <option value="" disabled selected>Select a Service</option>
+                    <option value="branding">Brand Identity & Logo Design</option>
+                    <option value="uiux">UI/UX & Web Application</option>
+                    <option value="illustration">Illustration & Key Art</option>
+                    <option value="packaging">Packaging & Editorial Print</option>
+                    <option value="social">Digital Ads & Social Suite</option>
+                  </select>
+                </div>
+
+                <!-- Budget Range Dropdown -->
+                <div>
+                  <label for="form-budget" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                    Estimated Budget <span class="text-cyan-400">*</span>
+                  </label>
+                  <select id="form-budget" required class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm transition-colors">
+                    <option value="" disabled selected>Select Budget Tier</option>
+                    <option value="3k-5k">$3,000 – $5,000</option>
+                    <option value="5k-10k">$5,000 – $10,000</option>
+                    <option value="10k-20k">$10,000 – $20,000</option>
+                    <option value="20k+">$20,000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message Field -->
+              <div>
+                <label for="form-message" class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">
+                  Project Brief & Details <span class="text-cyan-400">*</span>
+                </label>
+                <textarea id="form-message" rows="4" required placeholder="Tell me about your brand goals, target audience, timelines, or specific deliverables..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 focus:outline-none focus:border-cyan-400 text-sm transition-colors resize-none"></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button id="contact-submit-btn" type="submit" class="w-full py-4 rounded-xl font-bold bg-gradient-to-r from-cyan-400 to-indigo-500 text-black hover:opacity-90 transition-opacity shadow-lg shadow-cyan-500/25 flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-5 h-5"></i>
+                <span>Send Message Now</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       8. FOOTER
+       ========================================================================== -->
+  <footer class="py-12 bg-slate-950 border-t border-slate-900 text-sm text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <!-- Copyright & Name -->
+      <div class="flex items-center gap-3">
+        <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-400 to-indigo-600 flex items-center justify-center font-bold text-black text-sm">
+          A
+        </div>
+        <p>© 2026 Muhammad Syamsul Muarif. Built with modern HTML5, Tailwind CSS & JS.</p>
+      </div>
+
+      <!-- Quick Nav Links -->
+      <div class="flex items-center gap-6">
+        <a href="#home" class="hover:text-cyan-400 transition-colors">Home</a>
+        <a href="#portfolio" class="hover:text-cyan-400 transition-colors">Portfolio</a>
+        <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="#services" class="hover:text-cyan-400 transition-colors">Services</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+      </div>
+
+      <!-- Back to Top Button -->
+      <a href="#home" class="w-10 h-10 rounded-full bg-slate-900 border border-slate-800 hover:border-cyan-400 text-slate-300 hover:text-white flex items-center justify-center transition-colors" aria-label="Back to Top">
+        <i data-lucide="arrow-up" class="w-5 h-5"></i>
+      </a>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       9. TOAST NOTIFICATION CONTAINER
+       ========================================================================== -->
+  <div id="toast-notification" class="fixed bottom-6 right-6 z-50 max-w-sm glass-panel p-4 rounded-2xl border border-cyan-500/40 shadow-2xl flex items-center gap-3">
+    <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center shrink-0">
+      <i id="toast-icon" data-lucide="info" class="w-5 h-5"></i>
+    </div>
+    <div id="toast-message" class="text-xs text-slate-200 font-medium">
+      Notification message goes here.
+    </div>
+  </div>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
